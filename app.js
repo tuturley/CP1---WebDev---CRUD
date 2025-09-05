@@ -92,7 +92,7 @@ const uiState = {
   idEmEdicao: null,
 };
 
-// REF
+
 const listaEl = document.getElementById('listaJogadoras');
 const buscaEl = document.getElementById('busca');
 const filtroClubeEl = document.getElementById('filtroClube');
@@ -114,18 +114,18 @@ const jogosEl = document.getElementById('jogos');
 
 function aplicarBuscaFiltroOrdenacao(arr) {
   let lista = [...arr];
-  // busca por nome ou posição (case-insensitive)
+
   if (uiState.busca.trim() !== '') {
     const q = uiState.busca.toLowerCase();
     lista = lista.filter(
       (j) => j.nome.toLowerCase().includes(q) || j.posicao.toLowerCase().includes(q)
     );
   }
-  // filtor culbe
+
   if (uiState.clube) {
     lista = lista.filter((j) => j.clube === uiState.clube);
   }
-  // ordenação
+
   if (uiState.ordenacao === 'nome') {
     lista.sort((a, b) => a.nome.localeCompare(b.nome));
   } else if (uiState.ordenacao === 'posicao') {
