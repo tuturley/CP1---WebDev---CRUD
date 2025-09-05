@@ -22,11 +22,9 @@ padding: 24px;
 line-height: 1.4;
 }
 
-
 /* ===== Header ===== */
 header { text-align: center; margin: 0 auto 24px; max-width: 1100px; }
 header h1 { font-size: 1.6rem; margin-bottom: 16px; }
-
 
 .header_acoes {
 display: grid;
@@ -35,7 +33,6 @@ gap: 10px;
 align-items: center;
 justify-content: center;
 }
-
 
 /* Inputs e botões do header */
 .header_acoes input[type="text"],
@@ -49,15 +46,12 @@ background: #fff;
 font-size: 14px;
 }
 
-
 .header_acoes input[type="text"] { min-width: 260px; }
 .header_acoes select { min-width: 160px; }
-
 
 /* Botões padrão */
 .header_acoes button { cursor: pointer; border: none; color: #fff; background: var(--primaria); box-shadow: var(--shadow); }
 .header_acoes button:hover { background: var(--primario-600); }
-
 
 /* Rótulos default para botões vazios do HTML */
 #ordenarNome::after { content: 'Ordenar por Nome'; }
@@ -65,4 +59,36 @@ font-size: 14px;
 #novaJogadora { background: var(--sucesso); }
 #novaJogadora:hover { background: #128636; }
 
+main { max-width: 1100px; margin: 0 auto; }
+.grid-cards {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+gap: 18px;
+}
 
+
+.card {
+background: var(--card);
+border-radius: var(--radius);
+box-shadow: var(--shadow);
+overflow: hidden;
+transition: transform .15s ease, box-shadow .15s ease;
+}
+.card:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(0,0,0,.12); }
+
+
+.card img { width: 100%; height: 180px; object-fit: cover; display: block; }
+
+
+.card-content { padding: 14px 14px 8px; }
+.card-content h3 { font-size: 1.05rem; margin-bottom: 6px; color: var(--primaria); }
+.card-content p { font-size: .92rem; color: var(--muted); margin-bottom: 4px; }
+.stats { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+.stat-pill { background: #f3f4f6; border: 1px solid #e5e7eb; padding: 4px 8px; border-radius: 999px; font-size: .82rem; }
+
+
+.card-acoes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; padding: 12px; border-top: 1px solid #eef2f7; }
+.card-acoes button { height: 36px; border: none; border-radius: 8px; cursor: pointer; font-size: .9rem; }
+.btn-favorita { background: var(--aviso); color: #111827; }
+.btn-editar { background: var(--primaria); color: #fff; }
+.btn-excluir { background: var(--perigo); color: #fff; }
