@@ -92,7 +92,6 @@ const uiState = {
   idEmEdicao: null,
 };
 
-
 const listaEl = document.getElementById('listaJogadoras');
 const buscaEl = document.getElementById('busca');
 const filtroClubeEl = document.getElementById('filtroClube');
