@@ -36,3 +36,33 @@ align-items: center;
 justify-content: center;
 }
 
+
+/* Inputs e botões do header */
+.header_acoes input[type="text"],
+.header_acoes select,
+.header_acoes button {
+height: 40px;
+padding: 0 12px;
+border: 1px solid #d1d5db;
+border-radius: 10px;
+background: #fff;
+font-size: 14px;
+}
+
+
+.header_acoes input[type="text"] { min-width: 260px; }
+.header_acoes select { min-width: 160px; }
+
+
+/* Botões padrão */
+.header_acoes button { cursor: pointer; border: none; color: #fff; background: var(--primaria); box-shadow: var(--shadow); }
+.header_acoes button:hover { background: var(--primario-600); }
+
+
+/* Rótulos default para botões vazios do HTML */
+#ordenarNome::after { content: 'Ordenar por Nome'; }
+#ordenarPosicao::after { content: 'Ordenar por Posição'; }
+#novaJogadora { background: var(--sucesso); }
+#novaJogadora:hover { background: #128636; }
+
+
