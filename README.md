@@ -50,4 +50,4 @@ Aplicação web simples em *HTML + CSS + JavaScript* que implementa um *CRUD* (C
 
 - Levi de Jesus da Silva Francelino RM:563279 
 - Ulisses Ribeiro Abreu RM: 562230
-- Arthur Ferreira Alves dos Santos RM:
+- Arthur Ferreira Alves dos Santos RM: 564958
