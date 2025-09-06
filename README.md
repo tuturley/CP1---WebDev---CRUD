@@ -45,3 +45,9 @@ Aplicação web simples em *HTML + CSS + JavaScript* que implementa um *CRUD* (C
 - *CSS3*  
 - *JavaScript (ES6+)*  
 - *LocalStorage*  
+
+## 👥 Integrantes
+
+- Levi de Jesus da Silva Francelino RM:563279 
+- Ulisses Ribeiro Abreu RM: 562230
+- Arthur Ferreira Alves dos Santos RM:
